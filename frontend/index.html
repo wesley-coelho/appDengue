@@ -25,12 +25,13 @@
             
 
             <div class="d-flex flex-column justify-content-center col-md-6 mb-4">
-                <img src="dengue_alvo.jpg" alt="mosquito da dengue" class="img-fluid">
+                {% load static %}
+                <img src="{% static 'dengue_alvo.jpg' %}" alt="mosquito da dengue" class="img-fluid">
             </div>
             <div class="d-flex flex-column justify-content-center col-lg-5">
                 <h1 class="text-danger h1 text-center mb-5">Ajude a combater<br>o Aedes Aegypti</h1> 
-    
-                <a href="addFoco.html" class="btn btn-outline-dark mb-1">+ novo foco</a>
+
+                <a href="{% url 'adicionar_foco' %}" class="btn btn-outline-dark mb-1">+ novo foco</a>
 
                 <a href="#" class="btn btn-danger">visualizar mapa</a>
                       
