@@ -1,0 +1,29 @@
+# Ignorar ambiente virtual
+venv/
+env/
+
+# Ignorar arquivos Python compilados
+__pycache__/
+*.py[cod]
+*.so
+
+# Ignorar arquivos temporários
+*.log
+*.pot
+*.mo
+*.swp
+*.swo
+
+# Ignorar banco de dados local SQLite (se estiver usando para testes)
+db.sqlite3
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar configurações do VSCode (caso use)
+.vscode/
+
+# Ignorar arquivos de migrations geradas automaticamente (opcional, se preferir gerar sempre do zero)
+*/migrations/__pycache__/
+*/migrations/*.pyc
